@@ -1,0 +1,708 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags:  
+
+The output was:
+1
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_436b6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_436b6.dir/build.make CMakeFiles/cmTC_436b6.dir/build
+Building C object CMakeFiles/cmTC_436b6.dir/CMakeCCompilerABI.c.o
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE   -v -Wl,-v -o CMakeFiles/cmTC_436b6.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/CMakeCCompilerABI.c
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/naboon/opt/anaconda3/bin
+clang-4.0: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Users/naboon/opt/anaconda3/bin/clang-4.0" -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu core2 -target-feature +ssse3 -target-linker-version 241.9 -v -dwarf-column-info -debugger-tuning=lldb -coverage-notes-file /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_436b6.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -O2 -fdebug-compilation-dir /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fblocks -fobjc-runtime=macosx-10.15.0 -fencode-extended-block-signature -fmax-type-align=16 -fdiagnostics-show-option -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_436b6.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 4.0.1 based upon LLVM 4.0.1 default target x86_64-apple-darwin19.0.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_436b6
+/usr/local/Cellar/cmake/3.19.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_436b6.dir/link.txt --verbose=1
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -v -Wl,-v CMakeFiles/cmTC_436b6.dir/CMakeCCompilerABI.c.o -o cmTC_436b6 
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/naboon/opt/anaconda3/bin
+ "/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/naboon/opt/anaconda3/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_436b6 -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -v CMakeFiles/cmTC_436b6.dir/CMakeCCompilerABI.c.o -lSystem /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT: ld64-274.2
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/naboon/opt/anaconda3/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_436b6] Error 1
+make: *** [cmTC_436b6/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_14185/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_14185.dir/build.make CMakeFiles/cmTC_14185.dir/build
+Building C object CMakeFiles/cmTC_14185.dir/testCCompiler.c.o
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -o CMakeFiles/cmTC_14185.dir/testCCompiler.c.o -c /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_14185
+/usr/local/Cellar/cmake/3.19.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_14185.dir/link.txt --verbose=1
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs  CMakeFiles/cmTC_14185.dir/testCCompiler.c.o -o cmTC_14185 
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_14185] Error 1
+make: *** [cmTC_14185/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags:  
+
+The output was:
+1
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a0bff/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a0bff.dir/build.make CMakeFiles/cmTC_a0bff.dir/build
+Building C object CMakeFiles/cmTC_a0bff.dir/CMakeCCompilerABI.c.o
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE   -v -Wl,-v -o CMakeFiles/cmTC_a0bff.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/CMakeCCompilerABI.c
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/naboon/opt/anaconda3/bin
+clang-4.0: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Users/naboon/opt/anaconda3/bin/clang-4.0" -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu core2 -target-feature +ssse3 -target-linker-version 241.9 -v -dwarf-column-info -debugger-tuning=lldb -coverage-notes-file /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_a0bff.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -O2 -fdebug-compilation-dir /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fblocks -fobjc-runtime=macosx-10.15.0 -fencode-extended-block-signature -fmax-type-align=16 -fdiagnostics-show-option -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_a0bff.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 4.0.1 based upon LLVM 4.0.1 default target x86_64-apple-darwin19.0.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_a0bff
+/usr/local/Cellar/cmake/3.19.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0bff.dir/link.txt --verbose=1
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -v -Wl,-v CMakeFiles/cmTC_a0bff.dir/CMakeCCompilerABI.c.o -o cmTC_a0bff 
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/naboon/opt/anaconda3/bin
+ "/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/naboon/opt/anaconda3/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_a0bff -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -v CMakeFiles/cmTC_a0bff.dir/CMakeCCompilerABI.c.o -lSystem /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT: ld64-274.2
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/naboon/opt/anaconda3/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_a0bff] Error 1
+make: *** [cmTC_a0bff/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7aa45/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7aa45.dir/build.make CMakeFiles/cmTC_7aa45.dir/build
+Building C object CMakeFiles/cmTC_7aa45.dir/testCCompiler.c.o
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -o CMakeFiles/cmTC_7aa45.dir/testCCompiler.c.o -c /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_7aa45
+/usr/local/Cellar/cmake/3.19.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7aa45.dir/link.txt --verbose=1
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs  CMakeFiles/cmTC_7aa45.dir/testCCompiler.c.o -o cmTC_7aa45 
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_7aa45] Error 1
+make: *** [cmTC_7aa45/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags:  
+
+The output was:
+1
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8fde7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8fde7.dir/build.make CMakeFiles/cmTC_8fde7.dir/build
+Building C object CMakeFiles/cmTC_8fde7.dir/CMakeCCompilerABI.c.o
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE   -v -Wl,-v -o CMakeFiles/cmTC_8fde7.dir/CMakeCCompilerABI.c.o -c /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/CMakeCCompilerABI.c
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/naboon/opt/anaconda3/bin
+clang-4.0: warning: -Wl,-v: 'linker' input unused [-Wunused-command-line-argument]
+ "/Users/naboon/opt/anaconda3/bin/clang-4.0" -cc1 -triple x86_64-apple-macosx10.15.0 -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -emit-obj -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -mthread-model posix -mdisable-fp-elim -masm-verbose -munwind-tables -target-cpu core2 -target-feature +ssse3 -target-linker-version 241.9 -v -dwarf-column-info -debugger-tuning=lldb -coverage-notes-file /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_8fde7.dir/CMakeCCompilerABI.c.gcno -resource-dir /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -O2 -fdebug-compilation-dir /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fblocks -fobjc-runtime=macosx-10.15.0 -fencode-extended-block-signature -fmax-type-align=16 -fdiagnostics-show-option -vectorize-loops -vectorize-slp -o CMakeFiles/cmTC_8fde7.dir/CMakeCCompilerABI.c.o -x c /usr/local/Cellar/cmake/3.19.1/share/cmake/Modules/CMakeCCompilerABI.c
+clang -cc1 version 4.0.1 based upon LLVM 4.0.1 default target x86_64-apple-darwin19.0.0
+ignoring nonexistent directory "/Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/Library/Frameworks"
+#include "..." search starts here:
+#include <...> search starts here:
+ /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/usr/include
+ /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk/System/Library/Frameworks (framework directory)
+End of search list.
+Linking C executable cmTC_8fde7
+/usr/local/Cellar/cmake/3.19.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8fde7.dir/link.txt --verbose=1
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs -v -Wl,-v CMakeFiles/cmTC_8fde7.dir/CMakeCCompilerABI.c.o -o cmTC_8fde7 
+clang version 4.0.1 (tags/RELEASE_401/final)
+Target: x86_64-apple-darwin13.4.0
+Thread model: posix
+InstalledDir: /Users/naboon/opt/anaconda3/bin
+ "/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-ld" -demangle -lto_library /Users/naboon/opt/anaconda3/lib/libLTO.dylib -dynamic -arch x86_64 -macosx_version_min 10.15.0 -pie -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o cmTC_8fde7 -search_paths_first -headerpad_max_install_names -pie -headerpad_max_install_names -dead_strip_dylibs -v CMakeFiles/cmTC_8fde7.dir/CMakeCCompilerABI.c.o -lSystem /Users/naboon/opt/anaconda3/bin/../lib/clang/4.0.1/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT: ld64-274.2
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7k armv7m armv7em (tvOS)
+Library search paths:
+	/Users/naboon/opt/anaconda3/lib
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib
+Framework search paths:
+	/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_8fde7] Error 1
+make: *** [cmTC_8fde7/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_7fa4d/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_7fa4d.dir/build.make CMakeFiles/cmTC_7fa4d.dir/build
+Building C object CMakeFiles/cmTC_7fa4d.dir/testCCompiler.c.o
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -o CMakeFiles/cmTC_7fa4d.dir/testCCompiler.c.o -c /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_7fa4d
+/usr/local/Cellar/cmake/3.19.1/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7fa4d.dir/link.txt --verbose=1
+/Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe  -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -Wl,-pie -Wl,-headerpad_max_install_names -Wl,-dead_strip_dylibs  CMakeFiles/cmTC_7fa4d.dir/testCCompiler.c.o -o cmTC_7fa4d 
+ld: warning: ignoring file /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd, file was built for unsupported file format ( 0x2D 0x2D 0x2D 0x20 0x21 0x74 0x61 0x70 0x69 0x2D 0x74 0x62 0x64 0x2D 0x76 0x33 ) which is not the architecture being linked (x86_64): /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/lib/libSystem.tbd
+ld: dynamic main executables must link with libSystem.dylib for architecture x86_64
+clang-4.0: error: linker command failed with exit code 1 (use -v to see invocation)
+make[1]: *** [cmTC_7fa4d] Error 1
+make: *** [cmTC_7fa4d/fast] Error 2
+
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe;-stdlib=libc++;-fvisibility-inlines-hidden;-std=c++14;-fmessage-length=0
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+No such file or directory
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang++ 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: -march=core2;-mtune=haswell;-mssse3;-ftree-vectorize;-fPIC;-fPIE;-fstack-protector-strong;-O2;-pipe
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags:  
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: -c 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+No such file or directory
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: /Users/naboon/opt/anaconda3/bin/x86_64-apple-darwin13.4.0-clang 
+Build flags: 
+Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+
+The output was:
+No such file or directory
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_sse41.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_82d72/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_82d72.dir/build.make CMakeFiles/cmTC_82d72.dir/build
+Building CXX object CMakeFiles/cmTC_82d72.dir/cpu_sse41.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_82d72.dir/cpu_sse41.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_sse41.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_sse41.cpp:4:17: error: always_inline function '_mm_packus_epi32' requires target feature 'sse4.1', but would be inlined into function 'main' that is compiled without support for 'sse4.1'
+    __m128i c = _mm_packus_epi32(a, b);
+                ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_82d72.dir/cpu_sse41.cpp.o] Error 1
+make: *** [cmTC_82d72/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_popcnt.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_071b5/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_071b5.dir/build.make CMakeFiles/cmTC_071b5.dir/build
+Building CXX object CMakeFiles/cmTC_071b5.dir/cpu_popcnt.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_071b5.dir/cpu_popcnt.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_popcnt.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_popcnt.cpp:14:4: error: "__POPCNT__ is not defined by compiler"
+#  error "__POPCNT__ is not defined by compiler"
+   ^
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_popcnt.cpp:22:13: error: use of undeclared identifier 'CV_POPCNT_U32'
+    int j = CV_POPCNT_U32(1);
+            ^
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_071b5.dir/cpu_popcnt.cpp.o] Error 1
+make: *** [cmTC_071b5/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_sse42.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a3d93/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_a3d93.dir/build.make CMakeFiles/cmTC_a3d93.dir/build
+Building CXX object CMakeFiles/cmTC_a3d93.dir/cpu_sse42.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_a3d93.dir/cpu_sse42.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_sse42.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_sse42.cpp:5:24: error: always_inline function '_mm_crc32_u8' requires target feature 'sse4.2', but would be inlined into function 'main' that is compiled without support for 'sse4.2'
+    unsigned int res = _mm_crc32_u8(1, 2);
+                       ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_a3d93.dir/cpu_sse42.cpp.o] Error 1
+make: *** [cmTC_a3d93/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_fp16.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_07bc0/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_07bc0.dir/build.make CMakeFiles/cmTC_07bc0.dir/build
+Building CXX object CMakeFiles/cmTC_07bc0.dir/cpu_fp16.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_07bc0.dir/cpu_fp16.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_fp16.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_fp16.cpp:26:2: error: "FP16 is not supported"
+#error "FP16 is not supported"
+ ^
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_fp16.cpp:31:18: error: use of undeclared identifier 'test'
+  printf("%d\n", test());
+                 ^
+2 errors generated.
+make[1]: *** [CMakeFiles/cmTC_07bc0.dir/cpu_fp16.cpp.o] Error 1
+make: *** [cmTC_07bc0/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_8db5b/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_8db5b.dir/build.make CMakeFiles/cmTC_8db5b.dir/build
+Building CXX object CMakeFiles/cmTC_8db5b.dir/cpu_avx.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_8db5b.dir/cpu_avx.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx.cpp:2:2: error: "__AVX__ define is missing"
+#error "__AVX__ define is missing"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_8db5b.dir/cpu_avx.cpp.o] Error 1
+make: *** [cmTC_8db5b/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx2.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4b8ba/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_4b8ba.dir/build.make CMakeFiles/cmTC_4b8ba.dir/build
+Building CXX object CMakeFiles/cmTC_4b8ba.dir/cpu_avx2.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_4b8ba.dir/cpu_avx2.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx2.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx2.cpp:2:2: error: "__AVX2__ define is missing"
+#error "__AVX2__ define is missing"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_4b8ba.dir/cpu_avx2.cpp.o] Error 1
+make: *** [cmTC_4b8ba/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1384/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_c1384.dir/build.make CMakeFiles/cmTC_c1384.dir/build
+Building CXX object CMakeFiles/cmTC_c1384.dir/cpu_avx512.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_c1384.dir/cpu_avx512.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512.cpp:11:2: error: "AVX512 is not supported"
+#error "AVX512 is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_c1384.dir/cpu_avx512.cpp.o] Error 1
+make: *** [cmTC_c1384/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512common.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_48cee/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_48cee.dir/build.make CMakeFiles/cmTC_48cee.dir/build
+Building CXX object CMakeFiles/cmTC_48cee.dir/cpu_avx512common.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_48cee.dir/cpu_avx512common.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512common.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512common.cpp:12:2: error: "AVX512-COMMON is not supported"
+#error "AVX512-COMMON is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_48cee.dir/cpu_avx512common.cpp.o] Error 1
+make: *** [cmTC_48cee/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knl.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_80906/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_80906.dir/build.make CMakeFiles/cmTC_80906.dir/build
+Building CXX object CMakeFiles/cmTC_80906.dir/cpu_avx512knl.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_80906.dir/cpu_avx512knl.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knl.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knl.cpp:14:2: error: "AVX512-KNL is not supported"
+#error "AVX512-KNL is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_80906.dir/cpu_avx512knl.cpp.o] Error 1
+make: *** [cmTC_80906/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knm.cpp'
+    check option: ''
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d6247/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_d6247.dir/build.make CMakeFiles/cmTC_d6247.dir/build
+Building CXX object CMakeFiles/cmTC_d6247.dir/cpu_avx512knm.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE -std=c++11 -o CMakeFiles/cmTC_d6247.dir/cpu_avx512knm.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knm.cpp
+/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knm.cpp:15:2: error: "AVX512-KNM is not supported"
+#error "AVX512-KNM is not supported"
+ ^
+1 error generated.
+make[1]: *** [CMakeFiles/cmTC_d6247.dir/cpu_avx512knm.cpp.o] Error 1
+make: *** [cmTC_d6247/fast] Error 2
+
+
+===== END =====
+
+Compilation failed:
+    source file: '/Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knm.cpp'
+    check option: ' -mavx512f -mavx512cd -mavx512er -mavx512pf -mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq'
+===== BUILD LOG =====
+Change Dir: /Users/naboon/Develop/wks/react_wks/camera-nodejs/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0cb42/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0cb42.dir/build.make CMakeFiles/cmTC_0cb42.dir/build
+Building CXX object CMakeFiles/cmTC_0cb42.dir/cpu_avx512knm.cpp.o
+/usr/bin/g++   -march=core2 -mtune=haswell -mssse3 -ftree-vectorize -fPIC -fPIE -fstack-protector-strong -O2 -pipe -stdlib=libc++ -fvisibility-inlines-hidden -std=c++14 -fmessage-length=0  -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -fPIE    -mavx512f -mavx512cd -mavx512er -mavx512pf -mavx5124fmaps -mavx5124vnniw -mavx512vpopcntdq -std=c++11 -o CMakeFiles/cmTC_0cb42.dir/cpu_avx512knm.cpp.o -c /Users/naboon/Develop/wks/react_wks/opencv/cmake/checks/cpu_avx512knm.cpp
+clang: error: unknown argument: '-mavx5124fmaps'
+clang: error: unknown argument: '-mavx5124vnniw'
+make[1]: *** [CMakeFiles/cmTC_0cb42.dir/cpu_avx512knm.cpp.o] Error 1
+make: *** [cmTC_0cb42/fast] Error 2
+
+
+===== END =====
+
